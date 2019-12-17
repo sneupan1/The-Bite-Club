@@ -1,0 +1,303 @@
+body {
+	margin:0;
+	padding: 0;
+	font-family: 'Courgette', cursive;
+	color: #666;
+	/*background: #FFFAF0;*/
+
+}
+
+header {
+	/*padding: 1px 60px;*/
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, .8);
+}
+
+header h1{
+    text-align: right;
+	font-family: 'Courgette', cursive;
+	letter-spacing: 8px;
+	color: #f00;
+	font-size: 30px;
+	padding: 5px 50px;
+	margin:0;
+}
+
+nav {
+	width: 100%;
+	height: 50px;
+	background: rgba(0, 0, 0, .8);
+	border-top: 1px solid rgba(255,255,255,.2);
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	position: sticky;
+	top: 0px;
+	z-index: 99;
+}
+
+nav ul {
+	display: flex;
+	margin: 0;
+
+	float: right;
+	
+}
+
+nav ul li {
+	list-style: none;
+	
+}
+
+nav ul li a {
+	display: block;
+	color: white;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 50px;
+	font-family: sans-serif;
+}
+
+nav ul li a:hover {
+    background: white;
+    display: block;
+	color: #f00;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 50px;
+	font-family: sans-serif;
+	transition: 0.6s;
+}
+nav ul li a.activern {
+    display: block;
+	color: #f00;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 50px;
+	font-family: sans-serif;
+}
+
+.pimg1 {
+	background-image: url("https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/ourdogspimg1.jpeg");
+	min-height: 740px;
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	opacity:0.8;
+	background-repeat: no-repeat;
+	/*fixed = parallax scroll = normal*/
+	background-attachment: fixed;
+	
+	
+}
+
+.ptext {
+	position: absolute;
+	top:45%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	font-family: 'Julee', cursive;
+
+}
+
+.ptext .container {
+	width: 90%;
+}
+.ptext .container .jumbotron {
+	padding: 20px; 
+    margin: 0px 0px 0px 0px;
+    background-color: rgba(17,17,17, 0.7);
+    border-radius: .3rem;
+}
+
+
+section {
+	/*text-align: center;*/
+	padding: 50px 0;
+}
+
+.members {
+	width: 100%;
+	text-align: center;
+	/*opacity: 1;*/
+	/* position: absolute; */
+	/*background-color: #282e34*/;
+	background-color: #282e34;
+	color: #ddd;
+	/* top: 672px; */
+}
+
+.members h1 {
+	font-family: 'Julee', cursive;
+	font-size: 50px;
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+
+.members h1 span {
+	border-bottom : 1px solid #ddd ;
+	padding-bottom: 0;
+}
+.members .fig-caption {
+	color: #ddd;
+	font-family: 'Courgette', cursive;
+
+}
+.members .thumbnail {
+	margin-bottom: 15px;
+	margin-left:10px;
+	margin-right:10px;
+}
+.image {
+	width: 100%;
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+}
+
+.dogImage {
+    size: cover;
+    height: inherit;
+    width: inherit;
+}
+
+.seeMore{
+	display: none;
+}
+
+#bigBox2, #extContent {
+	font-family: 'Julee', cursive;
+}
+/* 
+.image1 {
+background-image:url(https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/hank.jpg);
+}
+.image2 {
+background-image:url(https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/charlie.jpg);
+}
+.image3 {
+background-image:url(https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/ace.jpg);
+}
+.image4 {
+background-image:url(https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/cooper.jpg);
+}
+.image5 {
+background-image:url(https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/buddy.jpeg);
+}
+.image6 {
+background-image:url(https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/jack.jpeg);
+}
+.image7 {
+background-image:url(https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/rocky.jpeg);
+}
+.image8 {
+background-image:url(https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/bear.jpeg);
+}
+.image9 {
+background-image:url(https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/oliver.jpeg);
+}
+
+.image10 {
+background-image:url(https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/tucker.jpeg);
+}
+.image11 {
+background-image:url(https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/duke.jpeg);
+}
+
+.image12 {
+background-image:url(https://turing.cs.olemiss.edu/~sneupan1/assignment5/images/alfie.jpeg);
+} */
+
+
+
+
+/* .members figure {
+	width: 30%;
+	height: 400px;
+	float : left;
+	margin: 1.66%;
+}
+
+.members img {
+	height: 100%;
+	width:100%;
+} */
+
+
+
+footer{
+	background: rgba(0, 0, 0, .8);
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.2);
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	color: #ddd;
+	width: 100%;
+
+}
+footer .container {
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+
+}
+
+.footerspan {
+	border-bottom: 3px solid;
+}
+
+
+footer p#copyright {
+	text-align: left;
+	font-size: 10px;
+	margin: auto;
+}
+
+#logoutBtn {
+	outline: none;
+	background: none;
+	border: none;
+	display: block;
+	color: white;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 50px;
+	font-family: sans-serif;
+}
+
+#logoutBtn:hover {
+	background: white;
+	color: #f00;
+	transition: 0.6s;
+}
+
+#loginBtn {
+	outline: none;
+	background: none;
+	border: none;
+	display: block;
+	color: white;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 50px;
+	font-family: sans-serif;
+}
+
+#loginBtn:hover {
+	background: white;
+	color: #f00;
+	transition: 0.6s;
+}
+
+

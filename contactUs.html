@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://turing.cs.olemiss.edu/~sneupan1/assignment7/css/contactUs.css">
+    <link rel="stylesheet" type="text/css" href="https://turing.cs.olemiss.edu/~sneupan1/assignment7/css/change.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Contact Us</title>
+</head>
+
+<body id="contactUsPage">
+    <header>
+        <h1>THE BITE CLUB</h1>
+    </header>
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="biteclubourdogs.html">Our Dogs</a></li>
+                <li><a href="biteclubdonate.html">Donate</a></li>
+                <li><a href="biteclubapplication.html">Application</a></li>
+                <li id="change"><a href="contactUs.html">Contact Us</a></li>
+                <li id="loginTab"><button id="loginBtn">Log In</button></li>
+                <li id="logoutTab"><button id="logoutBtn">Log Out</button></li>
+            </ul>
+
+
+        </div>
+    </nav>
+
+    <section class="members">
+        <div class="container">
+            <h1><span>Contact Us</span></h1>
+            <form id="contactUs" class = "contactUs" action = "contactUsForm.php" method = "post">
+                <div class="row justify-content-center py-1">
+                    <label for="name" class="col-md-2 col-sm-3">Full Name:</label>
+                    <input class="col-md-2 col-sm-3" id="name" type="text" name="name" placeholder="Name" required>
+                </div>
+
+                <div class="row justify-content-center py-1">
+                    <label for="subject" class="col-md-2 col-sm-3">Subject:</label>
+                    <input class="col-md-2 col-sm-3" id="subject" type="text" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="row justify-content-center py-1">
+                    <label class="col-md-2 col-sm-3" for="username">Email:</label>
+                    <input class="col-md-2 col-sm-3" id="username" type="email" name="username" placeholder="Email"
+          		pattern=".+@go.olemiss.edu" required title = "Please enter your go.olemiss.edu email">
+                </div>
+
+                <div class="row justify-content-center py-1">
+                    <label class="col-md-2 col-sm-3" for="message">Message:</label>
+                    <textarea class="col-md-2 col-sm-3" name="message" id="message" rows="5"
+                        placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <input class="btn btn-light btn-sm mb-3 mt-2 px-5" id="contactUsBtn" name="submit" type="submit" value="Send Message">
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2><span class="footerspan">Contact Us</span></h2>
+            <p id="info">
+                <i class="fas fa-envelope"></i>Email: sneupan1@go.olemiss.edu
+                <br>
+                <i class="fas fa-phone"></i>Phone: (662)380-6731
+                <br>
+                Date and time: <span id="dateNtime"></span>
+		<br>
+		<span id="luckyNumbers"></span>
+		<br>
+		<span id="fortuneMessage"></span>
+            </p>
+        </div>
+
+
+        <hr>
+        <p id="copyright">All the contents in this website are subject to copyright.</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+    <script src="javascript/fb.js"></script>
+    <script src="javascript/theBiteClub.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

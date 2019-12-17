@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Julee&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Schoolbell&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css"
+		href="https://turing.cs.olemiss.edu/~sneupan1/assignment7/css/biteclubcss.css">
+	<link rel="stylesheet" type="text/css" href="https://turing.cs.olemiss.edu/~sneupan1/assignment7/css/change.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>The Bite Club</title>
+
+</head>
+
+<body>
+	<header>
+		<h1>THE BITE CLUB</h1>
+	</header>
+	<nav class="navbar navbar-expand-md navbar-light sticky-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li><a href="#" class="activern">Home</a></li>
+				<li><a href="biteclubourdogs.html">Our Dogs</a></li>
+				<li><a href="biteclubdonate.html">Donate</a></li>
+				<li><a href="biteclubapplication.html">Application</a></li>
+				<li id="change"><a href="contactUs.html">Contact Us</a></li>
+				<li id="loginTab"><button id="loginBtn">Log In</button></li>
+				<li id="logoutTab"><button id="logoutBtn">Log Out</button></li>
+			</ul>
+
+		</div>
+	</nav>
+
+	<div class="pimg1">
+		<div class="ptext">
+			<div class="container">
+				<div class="jumbotron">
+					WELCOME TO THE BITE CLUB
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="intro">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Meet our dogs. They'd love to meet you!</h1>
+				<p>We're passionate. We're non-profit. And we're volunteer-run. Although we do not exist, our mission is
+					to rescue as many dogs as we can and find happy homes for them where they will be properly taken
+					care of. The relationship between dogs and humans date back to centuries. Dogs and Humans share a
+					very special connection and we are here to embrace that.
+					<br>
+					Meet some of the dogs from our bite-club. All our dog-members are very cool. You will love them.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="pimg2">
+		<div class="ptext">
+			<div class="container">
+				<div class="jumbotron">
+					FIND YOUR PAW-SOME FRIEND IN OUR CLUB!
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="application">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Adopt your favourite dog from our club.</h1>
+				<p>We have thousands of amazing dogs in our club, who need love, care and support. They need a home. If
+					you like any of our members from The Bite Club, fill out an application for that particular member.
+					We would be more than happy to review your application.
+				</p>
+			</div>
+		</div>
+
+	</section>
+
+	<div class="pimg3">
+		<div class="ptext">
+			<div class="container">
+				<div class="jumbotron">
+					Help us rescue more dogs
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="donate">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Want to help our organization?</h1>
+				<p>Our organization runs completely from donations. We have provided food and shelter to thousands of
+					dogs which would have never been possible without the support of our generous donors from all around
+					the world. Help us today to rescue more dogs. They need our help.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="pimg4">
+		<div class="ptext">
+			<div class="container">
+				<div class="jumbotron">
+					THEY NEED A HOME!
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<h2><span class="footerspan">Contact Us</span></h2>
+			<p id="info">
+				<i class="fas fa-envelope"></i>Email: sneupan1@go.olemiss.edu
+				<br>
+				<i class="fas fa-phone"></i>Phone: (662)380-6731
+				<br>
+				Date and time: <span id="dateNtime"></span>
+				<br>
+				<span id="luckyNumbers"></span>
+				<br>
+				<span id="fortuneMessage"></span>
+			</p>
+		</div>
+
+
+		<hr>
+		<p id="copyright">All the contents in this website are subject to copyright.</p>
+	</footer>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+	<script src="javascript/fb.js"></script>
+	<script src="javascript/theBiteClub.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Julee&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Schoolbell&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css"
+		href="https://turing.cs.olemiss.edu/~sneupan1/assignment7/css/biteclubdonatecss.css">
+	<link rel="stylesheet" type="text/css" href="https://turing.cs.olemiss.edu/~sneupan1/assignment7/css/change.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title>Donate</title>
+</head>
+
+<body>
+	<header>
+		<h1>THE BITE CLUB</h1>
+	</header>
+	<nav class="navbar navbar-expand-md navbar-light sticky-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="biteclubourdogs.html">Our Dogs</a></li>
+				<li><a href="#" class="activern">Donate</a></li>
+				<li><a href="biteclubapplication.html">Application</a></li>
+				<li id="change"><a href="contactUs.html">Contact Us</a></li>
+				<li id="loginTab"><button id="loginBtn">Log In</button></li>
+				<li id="logoutTab"><button id="logoutBtn">Log Out</button></li>
+
+			</ul>
+
+		</div>
+	</nav>
+
+	<div class="pimg1">
+		<div class="ptext">
+			<div class="container">
+				<div class="jumbotron">
+					HELP US RESCUE MORE DOGS!
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="members">
+		<div class="container">
+			<h1><span>Donation Form</span></h1>
+			<form>
+				<div>
+					<label>Name<input id="name" type="text" name="name" placeholder="Name" required></label>
+					<label>Last Name<input id="lastname" type="text" name="lastname" placeholder="Last Name"
+							required></label>
+				</div>
+
+				<div>
+					<label for="Male">Male</label>
+					<input id="Male" type="radio" name="gender" value="Male">
+					<label for="Female">Female</label>
+					<input id="Female" type="radio" name="gender" value="Female">
+					<label for="Other">Other</label>
+					<input id="Other" type="radio" name="gender" value="Other">
+				</div>
+
+				<div>
+					<label>Email:
+						<input id="email" type="email" name="email" placeholder="Your Email" required>
+					</label>
+				</div>
+
+				<div>
+					<label>
+						Birthday
+						<input type="text" name="month" id="month" placeholder="Month">
+					</label>
+					<label>
+						-
+						<input type="text" name="day" id="day" placeholder="Day">
+					</label>
+					<label>
+						-
+						<input type="text" name="year" id="year" placeholder="Year">
+					</label>
+				</div>
+
+				<div>
+					<label>
+						Amount you would like to donate:
+						<input id="donate" type="text" name="donate" placeholder="Amount in dollars">
+					</label>
+				</div>
+
+				<div>
+					<label>
+						Reasons why you are making this donation (optional):
+						<br>
+						<input id="adoptreason" type="text" name="adoptreason" placeholder="Type your answer here...">
+
+					</label>
+				</div>
+
+				<input type="submit" value="submit">
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<h2><span class="footerspan">Contact Us</span></h2>
+			<p id="info">
+				<i class="fas fa-envelope"></i>Email: sneupan1@go.olemiss.edu
+				<br>
+				<i class="fas fa-phone"></i>Phone: (662)380-6731
+				<br>
+				Date and time: <span id="dateNtime"></span>
+				<br>
+				<span id="luckyNumbers"></span>
+				<br>
+				<span id="fortuneMessage"></span>
+			</p>
+		</div>
+
+
+		<hr>
+		<p id="copyright">All the contents in this website are subject to copyright.</p>
+	</footer>
+
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+	<script src="javascript/fb.js"></script>
+	<script src="javascript/theBiteClub.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
